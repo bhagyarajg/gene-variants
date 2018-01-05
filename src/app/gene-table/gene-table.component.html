@@ -1,0 +1,19 @@
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+        <tr>
+            <th scope="col">Alteration</th>
+            <th scope="col">Hugo Symbol</th>
+            <th scope="col">Entrez Gene Id</th>
+            <th scope="col">OncoGene and or TSG</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let geneVariant of genes">
+            <td> {{geneVariant.alteration}}</td>
+            <td>{{geneVariant.gene.hugoSymbol}}</td>
+            <td>{{geneVariant.gene.entrezGeneId}}</td>
+            <td>{{geneVariant.gene.oncogene && geneVariant.gene.tsg }}</td>
+
+        </tr>
+    </tbody>
+</table>
