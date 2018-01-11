@@ -6,7 +6,7 @@ To execute this application in your local machine, please follow the instruction
 1. Download the source code zip.
 2. Unzip the folder, open the command-line window and  navigate to this unziped folder location 
 3. Install node module depenencies by running the following command
-            npm install
+            `npm install`
 4. Run the appliation by executing the below command in a dev server.
-            ng serve 
+            `ng serve` 
   Navigate to http://localhost:4200/  in your browser to view it.
